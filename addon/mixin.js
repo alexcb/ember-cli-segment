@@ -10,6 +10,9 @@ export default Ember.Mixin.create({
   hasAnalytics: function() {
     return !!(window.analytics && typeof window.analytics === "object");
   },
+  initAnalytics: function() {
+      Ember.Logger.info('set me up');
+  },
 
   log: function() {
     if(this.config && this.config.segment && this.config.segment.LOG_EVENT_TRACKING) {
