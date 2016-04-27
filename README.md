@@ -17,6 +17,7 @@ In your `config/environment.js`
 
 ```js
 ENV['segment'] = {
+  DELAY_INIT: true,
   WRITE_KEY: 'your_segment_write_key',
   LOG_EVENT_TRACKING: true
 };
